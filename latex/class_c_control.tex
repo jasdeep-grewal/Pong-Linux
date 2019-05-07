@@ -1,0 +1,93 @@
+\hypertarget{class_c_control}{}\section{C\+Control Class Reference}
+\label{class_c_control}\index{C\+Control@{C\+Control}}
+
+
+A control class that gets or sets the data by opening up a comport.  
+
+
+
+
+{\ttfamily \#include $<$C\+Control.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_control_a3d1384d0e1ee2a4a478a798b46457468}{}\label{class_c_control_a3d1384d0e1ee2a4a478a798b46457468} 
+void {\bfseries init\+\_\+com} (int comport)
+\item 
+bool \hyperlink{class_c_control_a0bad8e51e54cb6f1e2a7b51d3a3940d3}{get\+\_\+data} (int type, int channel, int \&result)
+\item 
+bool \hyperlink{class_c_control_a13f557815616ef66a8f5dd4b725d8c32}{set\+\_\+data} (int type, int channel, int val)
+\item 
+double \hyperlink{class_c_control_a0321002fa4b31b1e3da23a5f2f21ecc3}{get\+\_\+analog} (int)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A control class that gets or sets the data by opening up a comport. 
+
+C\+Control.\+cpp
+
+\begin{DoxyAuthor}{Author}
+Jasdeep Grewal
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 -- 25 January 2019 
+\end{DoxyVersion}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_control_a0321002fa4b31b1e3da23a5f2f21ecc3}{}\label{class_c_control_a0321002fa4b31b1e3da23a5f2f21ecc3} 
+\index{C\+Control@{C\+Control}!get\+\_\+analog@{get\+\_\+analog}}
+\index{get\+\_\+analog@{get\+\_\+analog}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{get\+\_\+analog()}{get\_analog()}}
+{\footnotesize\ttfamily double C\+Control\+::get\+\_\+analog (\begin{DoxyParamCaption}\item[{int}]{channel }\end{DoxyParamCaption})}
+
+Sets data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Sets} & value of type, channel, and value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type, channel, and value if true 
+\end{DoxyReturn}
+\hypertarget{class_c_control_a0bad8e51e54cb6f1e2a7b51d3a3940d3}{}\label{class_c_control_a0bad8e51e54cb6f1e2a7b51d3a3940d3} 
+\index{C\+Control@{C\+Control}!get\+\_\+data@{get\+\_\+data}}
+\index{get\+\_\+data@{get\+\_\+data}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{get\+\_\+data()}{get\_data()}}
+{\footnotesize\ttfamily bool C\+Control\+::get\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{channel,  }\item[{int \&}]{result }\end{DoxyParamCaption})}
+
+Gets a comport.
+
+
+\begin{DoxyParams}{Parameters}
+{\em opens} & comport\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns nothing 
+\end{DoxyReturn}
+\hypertarget{class_c_control_a13f557815616ef66a8f5dd4b725d8c32}{}\label{class_c_control_a13f557815616ef66a8f5dd4b725d8c32} 
+\index{C\+Control@{C\+Control}!set\+\_\+data@{set\+\_\+data}}
+\index{set\+\_\+data@{set\+\_\+data}!C\+Control@{C\+Control}}
+\subsubsection{\texorpdfstring{set\+\_\+data()}{set\_data()}}
+{\footnotesize\ttfamily bool C\+Control\+::set\+\_\+data (\begin{DoxyParamCaption}\item[{int}]{type,  }\item[{int}]{channel,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+Gets data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gets} & values from type, channel, and result\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Type, channel, and value if true 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Control.\+h\item 
+C\+Control.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,140 @@
+\hypertarget{class_c_base4618}{}\section{C\+Base4618 Class Reference}
+\label{class_c_base4618}\index{C\+Base4618@{C\+Base4618}}
+
+
+This class is a base class for future labs which contains functions and members that can be used by the derived class.  
+
+
+
+
+{\ttfamily \#include $<$C\+Base4618.\+h$>$}
+
+Inheritance diagram for C\+Base4618\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_base4618}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_base4618_a43202fe8782b8620c889b3d935759cdd}{C\+Base4618} (\hyperlink{class_c_control}{C\+Control} \+\_\+cctrl, cv\+::\+Mat \+\_\+canvas)
+\item 
+virtual void \hyperlink{class_c_base4618_a46e2ad109d3c7c877d00cff9093736c7}{update} (double \&, double \&)
+\item 
+virtual void \hyperlink{class_c_base4618_aa4e8190003db02c98e7e6bdcfdf0ee1a}{draw} (int, int)
+\item 
+void \hyperlink{class_c_base4618_a535e816d735d10d6048dd39cd893d393}{run} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_base4618_ae97e0017b88b5a71565e522ed0c04413}{}\label{class_c_base4618_ae97e0017b88b5a71565e522ed0c04413} 
+\hyperlink{class_c_control}{C\+Control} {\bfseries \+\_\+cctrl}
+\item 
+\hypertarget{class_c_base4618_a1b925f757247b33ca2072f777f24582d}{}\label{class_c_base4618_a1b925f757247b33ca2072f777f24582d} 
+cv\+::\+Mat {\bfseries \+\_\+canvas}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a base class for future labs which contains functions and members that can be used by the derived class. 
+
+\hyperlink{_c_base4618_8h_source}{C\+Base4618.\+h}
+
+\begin{DoxyAuthor}{Author}
+Jasdeep Grewal
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 -- 7 February 2019 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_base4618_a43202fe8782b8620c889b3d935759cdd}{}\label{class_c_base4618_a43202fe8782b8620c889b3d935759cdd} 
+\index{C\+Base4618@{C\+Base4618}!C\+Base4618@{C\+Base4618}}
+\index{C\+Base4618@{C\+Base4618}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{C\+Base4618()}{CBase4618()}}
+{\footnotesize\ttfamily C\+Base4618\+::\+C\+Base4618 (\begin{DoxyParamCaption}\item[{\hyperlink{class_c_control}{C\+Control}}]{\+\_\+cctrl,  }\item[{cv\+::\+Mat}]{\+\_\+canvas }\end{DoxyParamCaption})}
+
+Creates contstructor for canvas and comport
+
+
+\begin{DoxyParams}{Parameters}
+{\em Canvas} & size is initialized \\
+\hline
+{\em Comport} & number is initailized\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_base4618_aa4e8190003db02c98e7e6bdcfdf0ee1a}{}\label{class_c_base4618_aa4e8190003db02c98e7e6bdcfdf0ee1a} 
+\index{C\+Base4618@{C\+Base4618}!draw@{draw}}
+\index{draw@{draw}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void C\+Base4618\+::draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws lines based on X and Y coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em Repeatedly} & gets analog inputs and determines X and Y coordinates \\
+\hline
+{\em Makes} & a line using the X and Y coordinates\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_c_pong_ac4687aab31fbe5912cac2058663163fa}{C\+Pong}, and \hyperlink{class_c_sketch_a9b5af655812ecfa15791f5199854a3a4}{C\+Sketch}.
+
+\hypertarget{class_c_base4618_a535e816d735d10d6048dd39cd893d393}{}\label{class_c_base4618_a535e816d735d10d6048dd39cd893d393} 
+\index{C\+Base4618@{C\+Base4618}!run@{run}}
+\index{run@{run}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void C\+Base4618\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Runs the draw and update function
+
+
+\begin{DoxyParams}{Parameters}
+{\em Runs} & functions until q is pressed to quit\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+\hypertarget{class_c_base4618_a46e2ad109d3c7c877d00cff9093736c7}{}\label{class_c_base4618_a46e2ad109d3c7c877d00cff9093736c7} 
+\index{C\+Base4618@{C\+Base4618}!update@{update}}
+\index{update@{update}!C\+Base4618@{C\+Base4618}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Base4618\+::update (\begin{DoxyParamCaption}\item[{double \&}]{x\+Position,  }\item[{double \&}]{y\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates X and Y coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gets} & analog inputs \\
+\hline
+{\em Updates} & them continuously to mimic an Etch-\/\+A-\/\+Sketch\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{class_c_pong_a036cdd714486e765a658b835547d058e}{C\+Pong}, and \hyperlink{class_c_sketch_a81582a1c6eb7524db76546565412a88b}{C\+Sketch}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Base4618.\+h\item 
+C\+Base4618.\+cpp\end{DoxyCompactItemize}

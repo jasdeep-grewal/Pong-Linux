@@ -1,0 +1,134 @@
+\hypertarget{class_c_pong}{}\section{C\+Pong Class Reference}
+\label{class_c_pong}\index{C\+Pong@{C\+Pong}}
+
+
+A class which is used to implement Pong.  
+
+
+
+
+{\ttfamily \#include $<$C\+Pong.\+h$>$}
+
+Inheritance diagram for C\+Pong\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_pong}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_pong_a6eb8c1a5601f06350cc0c3d30fbc392a}{C\+Pong} (cv\+::\+Size, int)
+\item 
+void \hyperlink{class_c_pong_a036cdd714486e765a658b835547d058e}{update} (double \&x\+Position, double \&y\+Position)
+\item 
+void \hyperlink{class_c_pong_ac4687aab31fbe5912cac2058663163fa}{draw} (int x, int y)
+\item 
+bool \hyperlink{class_c_pong_a74d1c17870e642d1567833a9f40c870e}{btn\+Pressed} (int gpio\+Pin)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A class which is used to implement Pong. 
+
+\hyperlink{_c_pong_8h_source}{C\+Pong.\+h}
+
+This class inherits from the base class called \hyperlink{_c_base4618_8h_source}{C\+Base4618.\+h} and overrides the functions.
+
+\begin{DoxyAuthor}{Author}
+Jasdeep Grewal
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1 -- 8 February 2019 
+\end{DoxyVersion}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_pong_a6eb8c1a5601f06350cc0c3d30fbc392a}{}\label{class_c_pong_a6eb8c1a5601f06350cc0c3d30fbc392a} 
+\index{C\+Pong@{C\+Pong}!C\+Pong@{C\+Pong}}
+\index{C\+Pong@{C\+Pong}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{C\+Pong()}{CPong()}}
+{\footnotesize\ttfamily C\+Pong\+::\+C\+Pong (\begin{DoxyParamCaption}\item[{cv\+::\+Size}]{\+\_\+canvas\+Size2,  }\item[{int}]{\+\_\+comport }\end{DoxyParamCaption})}
+
+Creates constructor for canvas
+
+
+\begin{DoxyParams}{Parameters}
+{\em Canvas} & size is initialized \\
+\hline
+{\em Comport} & number is initialized\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_pong_a74d1c17870e642d1567833a9f40c870e}{}\label{class_c_pong_a74d1c17870e642d1567833a9f40c870e} 
+\index{C\+Pong@{C\+Pong}!btn\+Pressed@{btn\+Pressed}}
+\index{btn\+Pressed@{btn\+Pressed}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{btn\+Pressed()}{btnPressed()}}
+{\footnotesize\ttfamily bool C\+Pong\+::btn\+Pressed (\begin{DoxyParamCaption}\item[{int}]{gpio\+Pin }\end{DoxyParamCaption})}
+
+Button debounce
+
+
+\begin{DoxyParams}{Parameters}
+{\em Uses} & number of ticks to debounce pushbutton\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if button was pressed 
+\end{DoxyReturn}
+\hypertarget{class_c_pong_ac4687aab31fbe5912cac2058663163fa}{}\label{class_c_pong_ac4687aab31fbe5912cac2058663163fa} 
+\index{C\+Pong@{C\+Pong}!draw@{draw}}
+\index{draw@{draw}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void C\+Pong\+::draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Moves paddle based on joystick position
+
+
+\begin{DoxyParams}{Parameters}
+{\em Repeatedly} & gets the analog input from the joystick \\
+\hline
+{\em Moves} & paddle using the analog input\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_base4618_aa4e8190003db02c98e7e6bdcfdf0ee1a}{C\+Base4618}.
+
+\hypertarget{class_c_pong_a036cdd714486e765a658b835547d058e}{}\label{class_c_pong_a036cdd714486e765a658b835547d058e} 
+\index{C\+Pong@{C\+Pong}!update@{update}}
+\index{update@{update}!C\+Pong@{C\+Pong}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Pong\+::update (\begin{DoxyParamCaption}\item[{double \&}]{x\+Position,  }\item[{double \&}]{y\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates Y coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gets} & analog inputs \\
+\hline
+{\em Updates} & joysyick position continuously to mimic an Etch-\/\+A-\/\+Sketch\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_base4618_a46e2ad109d3c7c877d00cff9093736c7}{C\+Base4618}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Pong.\+h\item 
+C\+Pong.\+cpp\end{DoxyCompactItemize}

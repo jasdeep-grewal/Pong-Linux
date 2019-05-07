@@ -1,0 +1,75 @@
+\hypertarget{class_c_sketch}{}\section{C\+Sketch Class Reference}
+\label{class_c_sketch}\index{C\+Sketch@{C\+Sketch}}
+Inheritance diagram for C\+Sketch\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_sketch}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_sketch_aa426bb25ef429d04103b180863dbc11a}{}\label{class_c_sketch_aa426bb25ef429d04103b180863dbc11a} 
+{\bfseries C\+Sketch} (cv\+::\+Size, int)
+\item 
+void \hyperlink{class_c_sketch_a81582a1c6eb7524db76546565412a88b}{update} (double \&x\+Position, double \&y\+Position)
+\item 
+void \hyperlink{class_c_sketch_a9b5af655812ecfa15791f5199854a3a4}{draw} (int x, int y)
+\item 
+\hypertarget{class_c_sketch_a9e73bdd4ab788236c1a682459d6a6075}{}\label{class_c_sketch_a9e73bdd4ab788236c1a682459d6a6075} 
+bool {\bfseries btn\+Pressed} (int gpio\+Pin)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_sketch_a9b5af655812ecfa15791f5199854a3a4}{}\label{class_c_sketch_a9b5af655812ecfa15791f5199854a3a4} 
+\index{C\+Sketch@{C\+Sketch}!draw@{draw}}
+\index{draw@{draw}!C\+Sketch@{C\+Sketch}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void C\+Sketch\+::draw (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draws lines based on X and Y coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em Repeatedly} & gets analog inputs and determines X and Y coordinates \\
+\hline
+{\em Makes} & a line using the X and Y coordinates\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_base4618_aa4e8190003db02c98e7e6bdcfdf0ee1a}{C\+Base4618}.
+
+\hypertarget{class_c_sketch_a81582a1c6eb7524db76546565412a88b}{}\label{class_c_sketch_a81582a1c6eb7524db76546565412a88b} 
+\index{C\+Sketch@{C\+Sketch}!update@{update}}
+\index{update@{update}!C\+Sketch@{C\+Sketch}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void C\+Sketch\+::update (\begin{DoxyParamCaption}\item[{double \&}]{x\+Position,  }\item[{double \&}]{y\+Position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Updates X and Y coordinates
+
+
+\begin{DoxyParams}{Parameters}
+{\em Gets} & analog inputs \\
+\hline
+{\em Updates} & them continuously to mimic an Etch-\/\+A-\/\+Sketch\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Does not return anything 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{class_c_base4618_a46e2ad109d3c7c877d00cff9093736c7}{C\+Base4618}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+Sketch.\+h\item 
+C\+Sketch.\+cpp\end{DoxyCompactItemize}
